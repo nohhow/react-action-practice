@@ -1,0 +1,14 @@
+button {
+    margin: 1rem;
+    width:20%;
+    padding:20px;
+    font-size: 2rem;
+    font-weight: 700;
+    border-width: 10px;
+    border-color: whitesmoke;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
