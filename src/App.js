@@ -4,7 +4,7 @@ import PlusMinus from './pages/PlusMinus';
 
 function App() {
   return (
-    <div style={{textAlign:'center', backgroundColor:'pink'}}>
+    <div style={{textAlign:'center', backgroundColor:'powderblue'}}>
       <PlusMinus/>
     </div>
   );
