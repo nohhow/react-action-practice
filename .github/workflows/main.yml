@@ -5,8 +5,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest          #Job 가상환경 인스턴스
     steps:
-    - uses: actions/checkout@main
-    - uses: awact/s3-action@main
+    - uses: actions/checkout@master
+    - uses: awact/s3-action@master
       with:
         args: --acl public-read --follow-symlinks --delete
       env:
