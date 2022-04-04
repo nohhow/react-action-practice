@@ -2,7 +2,7 @@ name: Sync S3 Bucket                #workflow 이름
 on: push                            #Event 감지
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest          #Job 가상환경 인스턴스
     steps:
     - uses: actions/checkout@master
