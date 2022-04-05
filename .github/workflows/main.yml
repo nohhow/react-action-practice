@@ -5,6 +5,7 @@ jobs:
   test:
     runs-on: ubuntu-latest          #Job 가상환경 인스턴스
     steps:
+    - uses: actions/checkout@master
     - name : Install Dependencies   # 의존파일 설치
       run : npm install
     - name: test code
