@@ -5,10 +5,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest          #Job 가상환경 인스턴스
     steps:
+    - uses: actions/checkout@master
+    - name : Install Dependencies   # 의존파일 설치
+      run : npm install
     - name: test code
-      run :
-        npm install
-          npm test
+      run : npm test
+    - run : npm run build
+   
     - uses: actions/checkout@master
     - uses: awact/s3-action@master
       with:
