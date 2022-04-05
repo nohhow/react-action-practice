@@ -29,7 +29,7 @@ const PlusMinus = () => {
       <br />
       <button
         onClick={onClickOnOff}
-        style={{ backgroundColor: "pink", borderColor: "blue" }}
+        style={{ backgroundColor: "blue", borderColor: "blue" }}
       >
         on/off
       </button>
