@@ -2,7 +2,7 @@ name: Sync S3 Bucket                #workflow 이름
 on: push                            #Event 감지
 
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest          #Job 가상환경 인스턴스
     steps:
     - uses: actions/checkout@master
@@ -10,15 +10,8 @@ jobs:
       run : npm install
     - name: test code
       run : npm test
-  build:
-    runs-on: ubuntu-latest          #Job 가상환경 인스턴스
-    steps:
-    - uses: actions/checkout@master
     - run : npm run build
    
-  deploy:
-    runs-on: ubuntu-latest          #Job 가상환경 인스턴스
-    steps:
     - uses: actions/checkout@master
     - uses: awact/s3-action@master
       with:
